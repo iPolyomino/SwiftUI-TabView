@@ -15,22 +15,31 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 Text("萩倉")
+                    .font(.custom("HiraMinProN-W6", size: 100))
                 Spacer()
                 HStack{
                     Text("年齢")
-                    Text("XXさい")
+                    Text("23歳")
                 }
-                HStack{
+                HStack {
                     Text("所属")
                     Text("関西学院")
                 }
+                Spacer()
+                Text("プログラミング講座講師")
+                    .font(.title)
+                    .foregroundColor(Color.red)
             }.tabItem {
-                Text("萩倉タブ")
+                Text("Mr. Hagikura")
             }.tag(1)
-            Text("福井")
-                .tabItem {
-                    Text("福井タブ")
-                }.tag(2)
+            VStack {
+                Text("福井")
+                Text("昌則")
+            }
+            .font(.custom("HiraMinProN-W6", size: 100))
+            .tabItem {
+                Text("Dr. Fukui")
+            }.tag(2)
         }
     }
 }
