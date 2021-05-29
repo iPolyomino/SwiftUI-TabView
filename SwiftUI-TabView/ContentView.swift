@@ -32,11 +32,21 @@ struct ContentView: View {
             }.tabItem {
                 Text("Mr. Hagikura")
             }.tag(1)
-            VStack {
-                Text("福井")
-                Text("昌則")
+            VStack{
+                Spacer()
+                VStack {
+                    Text("福井")
+                    Text("昌則")
+                }
+                .font(.custom("HiraMinProN-W6", size: 100))
+                Spacer()
+                Text("徳島大学 高等教育研究センター 学修支援部門 EdTech推進班 准教授")
+                Text("博士 (工学)・修士 (学校教育学)")
+                Spacer()
+                Text("プログラミング講座講師")
+                    .font(.title)
+                    .foregroundColor(Color.red)
             }
-            .font(.custom("HiraMinProN-W6", size: 100))
             .tabItem {
                 Text("Dr. Fukui")
             }.tag(2)
