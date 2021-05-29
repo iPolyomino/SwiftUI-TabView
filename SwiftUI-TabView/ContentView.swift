@@ -25,6 +25,10 @@ struct ContentView: View {
                     Text("所属")
                     Text("関西学院")
                 }
+                HStack {
+                    Text("趣味")
+                    Text("アマチュア無線、旅行、写真撮影")
+                }
                 Spacer()
                 Text("プログラミング講座講師")
                     .font(.title)
